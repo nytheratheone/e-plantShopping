@@ -38,7 +38,7 @@ function Navbar() {
 
 export default function AboutUs() {
   return (
-    <div className="about-page">
+    <div className="about-us-container about-page">
       <Navbar />
 
       <div className="about-hero">

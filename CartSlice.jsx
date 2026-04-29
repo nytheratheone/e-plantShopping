@@ -51,6 +51,18 @@ const cartSlice = createSlice({
       }
     },
 
+    // Update quantity to a specific value — removes item if quantity set to 0 or below
+    updateQuantity(state, action) {
+      const { id, quantity } = action.payload
+      if (quantity <= 0) {
+        state.items = state.items.filter(item => item.id !== id)
+        state.addedIds = state.addedIds.filter(addedId => addedId !== id)
+      } else {
+        const item = state.items.find(item => item.id === id)
+        if (item) item.quantity = quantity
+      }
+    },
+
     // Clear all items from the cart
     clearCart(state) {
       state.items = []
@@ -64,6 +76,7 @@ export const {
   removeItem,
   increaseQuantity,
   decreaseQuantity,
+  updateQuantity,
   clearCart,
 } = cartSlice.actions
 

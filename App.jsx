@@ -12,7 +12,7 @@ function LandingPage() {
   const navigate = useNavigate()
 
   return (
-    <div className="landing-page">
+    <div className="landing-page background-image">
       <nav className="navbar">
         <Link to="/" className="navbar-brand">Paradise Nursery</Link>
         <ul className="navbar-links">
@@ -31,8 +31,7 @@ function LandingPage() {
         <span className="hero-eyebrow">Est. 2019 · Handcurated Botanicals</span>
 
         <h1 className="hero-title">
-          Paradise<br />
-          <em>Nursery</em>
+          Welcome to Paradise Nursery
         </h1>
 
         <p className="hero-tagline">
@@ -45,7 +44,7 @@ function LandingPage() {
           onClick={() => navigate('/plants')}
           aria-label="Browse our plant collection"
         >
-          Explore the Collection
+          Get Started
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
