@@ -15,11 +15,11 @@ This shopping cart application allows users to:
 
 ## Tech Stack
 
-- **React 18** — component-based UI
-- **Redux Toolkit** — global state management for cart
-- **React Router DOM** — client-side routing
-- **Vite** — fast development and build tooling
-- **CSS Modules / App.css** — styling and layout
+- **React 18** component-based UI
+- **Redux Toolkit** global state management for cart
+- **React Router DOM** client-side routing
+- **Vite** fast development and build tooling
+- **CSS Modules / App.css** styling and layout
 
 ## Project Structure
 
